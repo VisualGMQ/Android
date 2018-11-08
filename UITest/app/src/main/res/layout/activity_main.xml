@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a TextView!"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="this is a Button"
+        android:id="@+id/button"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="please input your text,this is a EditText"
+        android:id="@+id/edittext"
+        android:maxLines="3" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show text"
+        android:id="@+id/submit"
+        android:textAllCaps="false"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/cv"
+        android:id="@+id/img"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgbutton"
+        android:text="click to change image"
+        android:textAllCaps="false"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb"
+        android:visibility="gone"/>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showpb"
+        android:text="click to show ProgressBar"
+        android:textAllCaps="false"/>
+    <Button android:id="@+id/dialbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show dialog"
+            android:textAllCaps="false"/>
+    <Button android:id="@+id/pdbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="click to show PrigressDialog"/>
+
+
+</LinearLayout>
