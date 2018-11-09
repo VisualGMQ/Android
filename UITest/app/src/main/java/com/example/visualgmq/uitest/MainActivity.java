@@ -9,7 +9,6 @@ import android.content.*;
 
 public class MainActivity extends AppCompatActivity {
     static boolean bimg = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,7 +91,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //ProgressDialog
-        //ProgressDialog is abundanted by the newer SDK.Please don't use it.
+        //NextScene
+        Button nextScene = (Button)findViewById(R.id.nextbutton);
+        nextScene.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

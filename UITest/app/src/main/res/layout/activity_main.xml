@@ -3,9 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity"
     android:orientation="vertical">
+
+    <com.example.visualgmq.uitest.titleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="match_parent"
@@ -58,11 +62,9 @@
             android:layout_height="wrap_content"
             android:text="show dialog"
             android:textAllCaps="false"/>
-    <Button android:id="@+id/pdbutton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="click to show PrigressDialog"/>
-
+    <Button android:id="@+id/nextbutton"
+        android:text="goto next scene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
